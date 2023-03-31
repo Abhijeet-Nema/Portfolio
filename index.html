@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/particle.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/8bc1e3a8fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio | Abhijeet Nema</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="intro pages" id="intro">
+        <!-- <div class="circle circle1"></div>
+          <div class="circle circle2"></div> -->
+        <div id="particles-js"></div>
+        <div class="quickBar" onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">
+          <a href="#intro" class="quickOptions">
+            <i class="fa-solid fa-address-card"></i> About
+          </a>
+          <a href="#skills" class="quickOptions">
+            <i class="fa-solid fa-code"></i> Skills
+          </a>
+          <a href="#projects" class="quickOptions">
+            <i class="fa-solid fa-laptop-file"></i> Projects
+          </a>
+          <a href="#" class="quickOptions">
+            <i class="fa-solid fa-file"></i> Resume
+          </a>
+        </div>
+        <div id="mouseCursor"></div>
+        <img src="./img/Vector.svg" alt="Abhijeet Nema" id="image" />
+        <div class="about">
+          <p onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">Hola! <span class="wave">👋🏻</span></p>
+          <p onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">I'm <span class="coloredText">Abhijeet Nema,</span></p>
+          <div class="coloredText profiles" onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">
+              <div class="role1 roles">Computer Science Engineer</div>
+              <div class="role2 roles">Python Programmer</div>
+              <div class="role3 roles">MERN Developer</div>
+              <div class="role4 roles">C Programmer</div>
+          </div>
+          <p class="social">Feel free to <span class="coloredText">connect</span></p>
+          <div class="links">
+            <a class="socialLinks" target="_blank" href="https://in.linkedin.com/in/abhijeet-nema-a15ba1202"><i class="fa fa-linkedin"></i></a>
+            <a class="socialLinks" target="_blank" href="https://github.com/Abhijeet-Nema"><i class="fa fa-github"></i></a>
+            <a class="socialLinks" target="_blank" href="https://instagram.com/nema_abhi22"><i class="fa fa-instagram"></i></a>
+            <a class="socialLinks" target="_blank" href="mailto:abhinema3@gmail.com"><i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="pages">
+        <div class="skillsHead">
+          <i class="fa-solid fa-code"></i> Skillset
+        </div>
+        <div class="card cardLeft" id="frontend">
+          <div class="head">Frontend</div>
+          <div class="iconsGrid">
+            <div class="icon"><img src="./img/html5.png" alt="html5"><small class="title">HTML 5</small></div>
+            <div class="icon"><img src="./img/css.png" alt="css"><small class="title">CSS 3</small></div>
+            <div class="icon"><img src="./img/bootstrap.png" alt="bootstrap"><small class="title">Bootstrap</small></div>
+            <div class="icon"><img src="./img/js.png" alt="JS"><small class="title">JavaScript</small></div>
+            <div class="icon"><img src="https://camo.githubusercontent.com/518977ed5e52020624daf41cf644046368af610f19a7b1220dd1d58377d08288/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f72656163742d6f726967696e616c2d776f72646d61726b2e737667" alt="reactjs"><small class="title">ReactJS</small></div>
+          </div>
+        </div>
+        <div class="card cardLeft" id="backend">
+          <div class="head">Backend</div>
+          <div class="iconsGrid">
+            <div class="icon"><img src="https://camo.githubusercontent.com/48c9507b62d83559dc3aef4f3951293b15ab2f5fa1029bdf6ec42f9fa062e775/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6e6f64656a732d6f726967696e616c2d776f72646d61726b2e737667" alt="nodejs"><small class="title">NodeJS</small></div>
+            <div class="icon"><img src="./img/express.png" alt="exprss"><small class="title">ExpressJS</small></div>
+            <div class="icon"><img src="https://camo.githubusercontent.com/8cba877c9729b9af2c1e0952ce007c05a4be5bc723d56e50cf2f9f9c384a9d8e/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f7068702d6f726967696e616c2e737667" alt="php"><small class="title">PHP</small></div>
+          </div>
+        </div>
+        <div class="card cardLeft" id="languages">
+          <div class="head">Programming Languages</div>
+          <div class="iconsGrid">
+            <div class="icon"><img src="https://camo.githubusercontent.com/d10e5aa8ba67f1eb109da4e98cd75adfa42df2e6019f8222cfa14c0088ac674d/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f707974686f6e2d6f726967696e616c2e737667" alt="python"><small class="title">Python</small></div>
+            <div class="icon"><img src="https://camo.githubusercontent.com/67704b43eaee79d5db2e0ac9b288ca2eda7f8cdaaadce80ce77d44f8d08d3d95/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f632d6f726967696e616c2e737667" alt="c"><small class="title">C</small></div>
+          </div>
+        </div>
+        <div class="card cardLeft" id="db">
+          <div class="head">Databases</div>
+          <div class="iconsGrid">
+            <div class="icon"><img src="https://camo.githubusercontent.com/ef8a5aaa11f861e3692439d030c83a18d6d5ebc387d6e74ca4bba728aaeac7ad/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d7973716c2d6f726967696e616c2d776f72646d61726b2e737667" alt="mysql"><small class="title">MySql</small></div>
+            <div class="icon"><img src="https://camo.githubusercontent.com/e643754982a9dba595811285c08c4667f1062a17d9e7eca8dd16b43995bf372b/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d6f6e676f64622d6f726967696e616c2d776f72646d61726b2e737667" alt="mongodb"><small class="title">MongoDB</small></div>
+          </div>
+        </div>
+        <div class="card cardLeft" id="others">
+          <div class="head">Miscellaneous</div>
+          <div class="iconsGrid">
+            <div class="icon"><img src="./img/git.png" alt="git"><small class="title">Git</small></div>
+            <div class="icon"><img src="https://camo.githubusercontent.com/655177bfec18f3ff43066085b0bb5e29d0c12d2b0908220998b0f4d703d38826/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d6963726f736f66745f617a7572652d69636f6e2e737667" alt="azure"><small class="title">Azure</small></div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="pages"></div>
+      <div id="projects" class="pages"></div>
+    </div>
+    <!-- scripts -->
+    <script src="./js/particles.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/app.js"></script> 
+</html>
