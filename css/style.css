@@ -71,13 +71,13 @@ html::-webkit-scrollbar {
     /* display: none !important; */
     top: 16% !important;
     left: 5% !important;
-    font-size: 2rem !important;
+    font-size: 1.8rem !important;
   }
 
   .profiles {
-    font-size: 1.8rem !important;
+    font-size: 1.6rem !important;
     width: 100vw !important;
-    height: 2rem !important;
+    height: 1.7rem !important;
   }
   .quickOptions::after {
     display: none !important;
