@@ -26,6 +26,7 @@ html::-webkit-scrollbar {
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    top: 0.6rem !important;
   }
   .quickBar::-webkit-scrollbar {
     display: none;
@@ -86,6 +87,47 @@ html::-webkit-scrollbar {
   }
   #mouseCursor {
     display: none !important;
+  }
+
+  .card > .head {
+    font-size: 1rem !important;
+  }
+  .cardLeft {
+    left: -65% !important;
+    transform: rotate(90deg);
+  }
+  .icon img {
+    height: 3rem !important;
+  }
+  .card {
+    width: 62vw !important;
+    height: 42vh !important;
+  }
+  .skillsHead {
+    font-size: 1.8rem !important;
+  }
+  .title {
+    font-size: 0.6rem !important;
+  }
+
+  #frontend {
+    top: 1% !important;
+  }
+  #backend {
+    top: 16% !important;
+  }
+  #languages {
+    top: 32% !important;
+  }
+  #db {
+    top: 48% !important;
+  }
+  #others {
+    top: 64% !important;
+  }
+
+  .cardCenter {
+    top: 10% !important;
   }
 }
 .main {
