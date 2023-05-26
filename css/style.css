@@ -70,14 +70,14 @@ html::-webkit-scrollbar {
   .about {
     /* display: none !important; */
     top: 16% !important;
-    left: 2.5% !important;
+    left: 5% !important;
     font-size: 1.8rem !important;
   }
 
   .profiles {
-    font-size: 1.6rem !important;
+    font-size: 1.8rem !important;
     width: 100vw !important;
-    height: 1.7rem !important;
+    height: 2rem !important;
   }
   .quickOptions::after {
     display: none !important;
