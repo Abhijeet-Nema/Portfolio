@@ -283,23 +283,23 @@ html::-webkit-scrollbar {
   color: hsl(262deg 73% 13%);
 }
 #skills {
-  background: linear-gradient(180deg, #0d051b, #051125);
+  background: linear-gradient(180deg, #0d051b, #06275c);
   position: relative;
 }
 
 .skillsHead {
   color: whitesmoke;
-  font-family: "Istok Web", sans-serif;
+  font-family: "Marcellus SC", serif;
   text-align: center;
   font-size: 2.3rem;
   padding-top: 0.6rem;
-  font-weight: bolder;
+  font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
   width: max-content;
   margin: auto;
 }
-.skillsHead::after{
+.skillsHead::after {
   background: whitesmoke;
   border-radius: 16px;
   bottom: 0px;
@@ -319,10 +319,10 @@ html::-webkit-scrollbar {
 .card {
   position: absolute;
   /* left: -2%; */
-  width: 25vw;
-  min-height: 60vh;
+  width: 21vw;
+  min-height: 50vh;
   border-radius: 8px;
-  background: rgb(6 15 35);
+  background: rgb(3 22 53);
   border: 1px solid hsl(0deg 0% 100% / 14%);
   box-shadow: 0px 0px 15px -2px rgb(31 38 135 / 17%);
   border-radius: 8px;
@@ -396,7 +396,7 @@ html::-webkit-scrollbar {
   left: 2px;
   bottom: -2px;
   font-family: "Marcellus SC", serif;
-  color: #060f23;
+  color: rgb(3 22 53);
   font-weight: bold;
 }
 
@@ -422,4 +422,291 @@ html::-webkit-scrollbar {
 }
 #others {
   top: 38%;
+}
+
+#projects {
+  /* background: #090808; */
+  /* background: linear-gradient(#06275c, #00bdbd); */
+  transition: all 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.projHead {
+  color: whitesmoke;
+  font-family: "Marcellus SC", serif;
+  /* font-family: "Raleway", sans-serif; */
+  text-align: center;
+  font-size: 2.1rem;
+  padding-top: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+  width: max-content;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.projHead::after {
+  background: whitesmoke;
+  border-radius: 16px;
+  bottom: 0px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+  width: 0%;
+}
+
+.projHead:hover::after {
+  width: 100%;
+}
+.projectsCenter > div > i {
+  font-size: 1.8rem;
+}
+
+/* .frameCont {
+  position: relative;
+} */
+
+.frameImgs {
+  position: absolute;
+  z-index: 1;
+  filter: drop-shadow(4px 4px 6px black);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.project_laptop {
+  width: 45rem;
+  left: 16%;
+  top: 18%;
+}
+
+.project_mobile {
+  width: 11rem;
+  top: 35%;
+  right: 35%;
+  transition-delay: 0.5s;
+}
+
+#fetn {
+  width: 100%;
+  height: 100%;
+}
+
+.titleArr {
+  position: absolute;
+  height: 10rem;
+  top: 14%;
+  left: 11%;
+  transform: rotateY(180deg);
+}
+
+.descArr {
+  position: absolute;
+  height: 10rem;
+  bottom: 29%;
+  right: 26.3%;
+  transform: rotateY(180deg) rotateZ(200deg);
+}
+
+.projectName {
+  position: absolute;
+  top: 11%;
+  left: 11.5%;
+  color: whitesmoke;
+  font-size: 2rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.projectDesc {
+  position: absolute;
+  bottom: 19%;
+  right: 10%;
+  color: whitesmoke;
+  font-size: 1.4rem;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-family: "Reem Kufi Ink", sans-serif;
+  width: 25%;
+  text-align: center;
+  line-height: 25px;
+  /* transform: translateY(10px); */
+}
+
+.techStack {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: whitesmoke;
+  border-radius: 8px;
+  padding: 5px 4px;
+}
+.stacktechs {
+  height: 2.7rem;
+  /* border: 1px solid; */
+  border-radius: 5px;
+}
+
+.projectActions {
+  position: absolute;
+  width: 23%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 7%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+
+.projectActions i {
+  font-size: 13px;
+}
+.projectActions a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Reem Kufi Ink", sans-serif;
+  font-size: 1.4rem;
+  /* border: 1px solid whitesmoke; */
+  padding: 7px 1.5rem;
+  border-radius: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  /* box-shadow: 0px 3px 9px -2px black; */
+  box-shadow: 0px 2px 6px -1px black;
+}
+
+/* .btnBg {
+  display: inline-block;
+  background: whitesmoke;
+  position: absolute;
+  height: 200%;
+  width: 200%;
+  bottom: -250%;
+  transform: skewY(10deg);
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+} */
+
+.projectActions a:hover {
+  box-shadow: 0px 0px 18px -5px black;
+}
+
+.projectActions a:hover .btnBg {
+  bottom: -50%;
+}
+
+.btnText {
+  position: relative;
+  z-index: 1;
+}
+.ss1 {
+  position: absolute;
+  top: 9%;
+  right: 21%;
+  width: 22%;
+  border-radius: 7px;
+  box-shadow: 3px 3px 6px 0px;
+  z-index: 0;
+}
+
+.ss2 {
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  width: 25%;
+  border-radius: 7px;
+  box-shadow: 3px 3px 6px 0px;
+  z-index: 0;
+}
+
+.ss_frame_mobile {
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.ss_frame_laptop {
+  transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+  transition-delay: 0.3s;
+}
+.not_visible_frame {
+  transform: translateY(50px);
+  opacity: 0;
+}
+
+.visible_frame {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.slideBtn {
+  position: absolute;
+  z-index: 1;
+  font-size: 2.5rem;
+  color: whitesmoke;
+  /* border: 3px solid; */
+  aspect-ratio: 1;
+  height: 4rem;
+  border-radius: 91%;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  left: 2%;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#slideUp {
+  box-shadow: 0px 3px 17px -8px black;
+  top: 35.5%;
+}
+#slideUp:hover {
+  box-shadow: 0px 0px 18px -5px black;
+}
+
+#slideDown {
+  box-shadow: 0px -3px 17px -8px black;
+  top: 46.5%;
+}
+#slideDown:hover {
+  box-shadow: 0px 0px 18px -5px black;
+}
+
+.hidden {
+  opacity: 0;
+  transition: all 0.5s linear;
+}
+
+.visible {
+  opacity: 1;
+  transition: all 0.5s linear;
+}
+
+.tb {
+  background: linear-gradient(rgb(6, 39, 92), #59566d);
+  transition: all 0.5s linear !important;
+}
+.fetn {
+  background: linear-gradient(rgb(6, 39, 92), #00bdbd);
+  transition: all 0.5s linear !important;
+}
+.vss {
+  background: linear-gradient(rgb(6, 39, 92), rgb(253 40 129));
+  transition: all 0.5s linear !important;
+}
+.wb {
+  background: linear-gradient(rgb(6, 39, 92), rgb(54 153 233));
+  transition: all 0.5s linear !important;
 }

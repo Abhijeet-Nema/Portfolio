@@ -13,6 +13,11 @@ let r3Angle = 180;
 let r4Angle = 270;
 let cards = document.getElementsByClassName("card");
 cards = Array.from(cards);
+let projects = document.getElementById("projects");
+let slideUp = document.getElementById("slideUp");
+let slideDown = document.getElementById("slideDown");
+let projectsArr = ["fetn", "tb", "vss", "wb"];
+let projectsArrPointer = 0;
 
 intro.addEventListener("mousemove", (e) => {
   // console.log(e.clientX, e.clientY)
@@ -79,6 +84,95 @@ Array.from(cards).forEach((card, i) => {
       card = card.target;
     }
     displayCard(card);
-    clearInterval(cardInterval)
+    clearInterval(cardInterval);
   });
+});
+
+// setTimeout(() => {
+//   a()
+// }, 1000);
+
+const a = () => {
+  Fetn_Mobile.classList.remove("not_visible_frame");
+  Fetn_Mobile.classList.add("visible_frame");
+  Fetn_Laptop.classList.remove("not_visible_frame");
+  Fetn_Laptop.classList.add("visible_frame");
+  setTimeout(() => {
+    let hiddenItems = Array.from(document.getElementsByClassName("hidden"));
+    hiddenItems.forEach((e) => {
+      e.classList.remove("hidden");
+      e.classList.add("visible");
+    });
+  }, 1000);
+};
+const b = () => {
+  Fetn_Mobile.classList.add("not_visible_frame");
+  Fetn_Mobile.classList.remove("visible_frame");
+  Fetn_Laptop.classList.add("not_visible_frame");
+  Fetn_Laptop.classList.remove("visible_frame");
+};
+
+const showProject = (projectName, hideProject) => {
+  projects.classList.add(projectName)
+  projects.classList.remove(hideProject)
+  let projectFrame = document.getElementById(projectName);
+  let mobileFrame = document.getElementById(projectName + "_mobile");
+  let laptopFrame = document.getElementById(projectName + "_laptop");
+  console.log(mobileFrame, laptopFrame);
+  mobileFrame.classList.remove("not_visible_frame");
+  mobileFrame.classList.add("visible_frame");
+  laptopFrame.classList.remove("not_visible_frame");
+  laptopFrame.classList.add("visible_frame");
+
+  setTimeout(() => {
+    let hiddenItems = Array.from(projectFrame.getElementsByClassName("hidden"));
+    hiddenItems.forEach((e) => {
+      e.classList.remove("hidden");
+      e.classList.add("visible");
+    });
+  }, 1000);
+};
+
+showProject("fetn");
+
+const hideProject = (projectName) => {
+  let projectFrame = document.getElementById(projectName);
+  let mobileFrame = document.getElementById(projectName + "_mobile");
+  let laptopFrame = document.getElementById(projectName + "_laptop");
+  console.log(mobileFrame, laptopFrame);
+  mobileFrame.classList.add("not_visible_frame");
+  mobileFrame.classList.remove("visible_frame");
+  laptopFrame.classList.add("not_visible_frame");
+  laptopFrame.classList.remove("visible_frame");
+
+  setTimeout(() => {
+    let hiddenItems = Array.from(
+      projectFrame.getElementsByClassName("visible")
+    );
+    hiddenItems.forEach((e) => {
+      e.classList.remove("visible");
+      e.classList.add("hidden");
+    });
+  }, 1000);
+};
+
+slideDown.addEventListener("click", () => {
+  hideProject(projectsArr[projectsArrPointer]);
+  prev = projectsArr[projectsArrPointer]
+  projectsArrPointer = (projectsArrPointer + 1) % projectsArr.length;
+  setTimeout(() => {
+    showProject(projectsArr[projectsArrPointer], prev);
+  }, 500);
+});
+
+slideUp.addEventListener("click", () => {
+  hideProject(projectsArr[projectsArrPointer]);
+  prev = projectsArr[projectsArrPointer]
+  projectsArrPointer =
+    projectsArrPointer - 1 < 0
+      ? projectsArr.length - 1
+      : projectsArrPointer - 1;
+  setTimeout(() => {
+    showProject(projectsArr[projectsArrPointer], prev);
+  }, 500);
 });

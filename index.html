@@ -15,6 +15,7 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/8bc1e3a8fa.js"
       crossorigin="anonymous"
@@ -43,7 +44,7 @@
           </a>
         </div>
         <div id="mouseCursor"></div>
-        <img src="./img/Vector.svg" alt="Abhijeet Nema" id="image" />
+        <img src="./img/Icons/Vector.svg" alt="Abhijeet Nema" id="image" />
         <div class="about">
           <p onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">Hola! <span class="wave">👋🏻</span></p>
           <p onmouseenter="quickBarZoomIn()" onmouseleave="quickBarZoomOut()">I'm <span class="coloredText">Abhijeet Nema,</span></p>
@@ -51,7 +52,7 @@
               <div class="role1 roles">Computer Science Engineer</div>
               <div class="role2 roles">Python Programmer</div>
               <div class="role3 roles">MERN Developer</div>
-              <div class="role4 roles">C Programmer</div>
+              <div class="role4 roles">C Coder</div>
           </div>
           <p class="social">Feel free to <span class="coloredText">connect</span></p>
           <div class="links">
@@ -69,10 +70,10 @@
         <div class="card cardLeft" id="frontend">
           <div class="head">Frontend</div>
           <div class="iconsGrid">
-            <div class="icon"><img src="./img/html5.png" alt="html5"><small class="title">HTML 5</small></div>
-            <div class="icon"><img src="./img/css.png" alt="css"><small class="title">CSS 3</small></div>
-            <div class="icon"><img src="./img/bootstrap.png" alt="bootstrap"><small class="title">Bootstrap</small></div>
-            <div class="icon"><img src="./img/js.png" alt="JS"><small class="title">JavaScript</small></div>
+            <div class="icon"><img src="./img/Icons/html5.png" alt="html5"><small class="title">HTML 5</small></div>
+            <div class="icon"><img src="./img/Icons/css.png" alt="css"><small class="title">CSS 3</small></div>
+            <div class="icon"><img src="./img/Icons/bootstrap.png" alt="bootstrap"><small class="title">Bootstrap</small></div>
+            <div class="icon"><img src="./img/Icons/js.png" alt="JS"><small class="title">JavaScript</small></div>
             <div class="icon"><img src="https://camo.githubusercontent.com/518977ed5e52020624daf41cf644046368af610f19a7b1220dd1d58377d08288/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f72656163742d6f726967696e616c2d776f72646d61726b2e737667" alt="reactjs"><small class="title">ReactJS</small></div>
           </div>
         </div>
@@ -80,7 +81,7 @@
           <div class="head">Backend</div>
           <div class="iconsGrid">
             <div class="icon"><img src="https://camo.githubusercontent.com/48c9507b62d83559dc3aef4f3951293b15ab2f5fa1029bdf6ec42f9fa062e775/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6e6f64656a732d6f726967696e616c2d776f72646d61726b2e737667" alt="nodejs"><small class="title">NodeJS</small></div>
-            <div class="icon"><img src="./img/express.png" alt="exprss"><small class="title">ExpressJS</small></div>
+            <div class="icon"><img src="./img/Icons/express.png" alt="exprss"><small class="title">ExpressJS</small></div>
             <div class="icon"><img src="https://camo.githubusercontent.com/8cba877c9729b9af2c1e0952ce007c05a4be5bc723d56e50cf2f9f9c384a9d8e/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f7068702d6f726967696e616c2e737667" alt="php"><small class="title">PHP</small></div>
           </div>
         </div>
@@ -101,13 +102,101 @@
         <div class="card cardLeft" id="others">
           <div class="head">Miscellaneous</div>
           <div class="iconsGrid">
-            <div class="icon"><img src="./img/git.png" alt="git"><small class="title">Git</small></div>
+            <div class="icon"><img src="./img/Icons/git.png" alt="git"><small class="title">Git</small></div>
             <div class="icon"><img src="https://camo.githubusercontent.com/655177bfec18f3ff43066085b0bb5e29d0c12d2b0908220998b0f4d703d38826/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d6963726f736f66745f617a7572652d69636f6e2e737667" alt="azure"><small class="title">Azure</small></div>
           </div>
         </div>
       </div>
+      <div id="projects" class="pages">
+          <div class="projHead"> <i class="fa-solid fa-laptop-file"></i> Projects</div>
+          <div id="slideUp" class="slideBtn"><i class="fa-solid fa-chevron-up"></i></div>
+          <div id="slideDown" class="slideBtn"><i class="fa-solid fa-chevron-down"></i></div>
+          <div id="fetn" class="frameCont">
+            <img src="./img/frames/Fetn_Laptop.png" id="fetn_laptop" class="frameImgs project_laptop not_visible_frame" alt="Laptop View">
+            <img src="./img/frames/Fetn_Mobile.png" id='fetn_mobile' class="frameImgs project_mobile not_visible_frame" alt="Mobile View">
+              
+            <img src="./img/Icons/arrow.png" alt="FETN" class="titleArr hidden">
+              <img src="./img/Icons/arrow.png" alt="FETN" class="descArr hidden">
+              <div class="projectName hidden">FETN</div>
+              <div id="fetn_desc" class="projectDesc hidden">Fetn is a platform to buy and sell things like books, guides, novels, calculators etc. It provides ease in buying or selling old stuffs at profitable prices.</div>
+              <div class="techStack hidden">
+                <img src="https://camo.githubusercontent.com/e643754982a9dba595811285c08c4667f1062a17d9e7eca8dd16b43995bf372b/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d6f6e676f64622d6f726967696e616c2d776f72646d61726b2e737667" alt="mongodb" class="stacktechs">
+                <img src="./img/Icons/express.png" alt="express" class="stacktechs">
+                <img src="./img/Icons/react.png" alt="reactjs" class="stacktechs">
+                <img src="https://camo.githubusercontent.com/48c9507b62d83559dc3aef4f3951293b15ab2f5fa1029bdf6ec42f9fa062e775/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6e6f64656a732d6f726967696e616c2d776f72646d61726b2e737667" alt="css" class="stacktechs">
+              </div>
+              <div class="projectActions">
+                <a href="#" class="siteUrl"><span class="btnText">Visit site <i class="fa fa-external-link"></i></span><span class="btnBg"></span></a>
+                <a href="#" class="githubUrl"><span class="btnText">View repo <i class="fa-solid fa-code"></i></span><span class="btnBg"></span></a>
+              </div>
+              <img src="./img/frames/fetn_ss.png" alt="screenshot" class="ss1 hidden">
+              <img src="./img/frames/fetn_ss.png" alt="screenshot" class="ss2 hidden">
+          </div>
+          <div id="tb" class="frameCont">
+            <img src="./img/frames/tb_laptop.png" id="tb_laptop" class="frameImgs project_laptop not_visible_frame" alt="Laptop View">
+            <img src="./img/frames/tb_mobile.png" id='tb_mobile' class="frameImgs project_mobile not_visible_frame" alt="Mobile View">
+              
+            <img src="./img/Icons/arrow.png" alt="Typing Booster" class="titleArr hidden">
+              <img src="./img/Icons/arrow.png" alt="Typing Booster" class="descArr hidden">
+              <div class="projectName hidden">Typing Booster</div>
+              <div id="fetn_desc" class="projectDesc hidden">Typingbooster is a free typing utilty to enhance typing speed. Boost your typing experience in an enjoyable manner.</div>
+              <div class="techStack hidden">
+                <img src="https://camo.githubusercontent.com/8cba877c9729b9af2c1e0952ce007c05a4be5bc723d56e50cf2f9f9c384a9d8e/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f7068702d6f726967696e616c2e737667" alt="mongodb" class="stacktechs">
+                <img src="https://camo.githubusercontent.com/ef8a5aaa11f861e3692439d030c83a18d6d5ebc387d6e74ca4bba728aaeac7ad/68747470733a2f2f70726f66696c696e61746f722e7269736861762e6465762f736b696c6c732d6173736574732f6d7973716c2d6f726967696e616c2d776f72646d61726b2e737667" alt="express" class="stacktechs">
+                <img src="./img/Icons/js.png" alt="reactjs" class="stacktechs">
+                <img src="./img/Icons/bootstrap.png" alt="css" class="stacktechs">
+              </div>
+              <!-- <div class="projectActions">
+                <a href="#" class="siteUrl hidden"><span class="btnText">Visit site <i class="fa fa-external-link"></i></span><span class="btnBg"></span></a>
+                <a href="#" class="githubUrl hidden"><span class="btnText">View repo <i class="fa-solid fa-code"></i></span><span class="btnBg"></span></a>
+              </div> -->
+              <img src="./img/frames/tb_ss1.png" alt="screenshot" class="ss1 hidden">
+              <img src="./img/frames/tb_ss2.png" alt="screenshot" class="ss2 hidden">
+          </div>
+          <div id="vss" class="frameCont">
+            <img src="./img/frames/vss_laptop.png" id="vss_laptop" class="frameImgs project_laptop not_visible_frame" alt="Laptop View">
+            <img src="./img/frames/vss_mobile.png" id='vss_mobile' class="frameImgs project_mobile not_visible_frame" alt="Mobile View">
+              
+            <img src="./img/Icons/arrow.png" alt="Vaccination Slots Spotter" class="titleArr hidden">
+              <img src="./img/Icons/arrow.png" alt="Vaccination Slots Spotter" class="descArr hidden">
+              <div class="projectName hidden">Vaccination Slots Spotter</div>
+              <div id="fetn_desc" class="projectDesc hidden">Vaccination Slots Spotter is Vaccination slots finder app to search for available vaccines slots nearby. It makes it easy for you to find slots</div>
+              <div class="techStack hidden">
+                <img src="./img/Icons/js.png" alt="js" class="stacktechs">
+                <img src="./img/Icons/css.png" alt="mongodb" class="stacktechs">
+                <img src="./img/Icons/bootstrap.png" alt="bootstrap" class="stacktechs">
+                <img src="/img/Icons/html5.png" alt="express" class="stacktechs">
+              </div>
+              <!-- <div class="projectActions">
+                <a href="#" class="siteUrl hidden"><span class="btnText">Visit site <i class="fa fa-external-link"></i></span><span class="btnBg"></span></a>
+                <a href="#" class="githubUrl hidden"><span class="btnText">View repo <i class="fa-solid fa-code"></i></span><span class="btnBg"></span></a>
+              </div> -->
+              <img src="./img/frames/vss_ss1.png" alt="screenshot" class="ss1 hidden">
+              <img src="./img/frames/vss_ss2.png" alt="screenshot" class="ss2 hidden">
+          </div>
+          <div id="wb" class="frameCont">
+            <img src="./img/frames/wb_laptop.png" id="wb_laptop" class="frameImgs project_laptop not_visible_frame" alt="Laptop View">
+            <img src="./img/frames/wb_mobile.png" id='wb_mobile' class="frameImgs project_mobile not_visible_frame" alt="Mobile View">
+              
+            <img src="./img/Icons/arrow.png" alt="Web Calculator" class="titleArr hidden">
+              <img src="./img/Icons/arrow.png" alt="Web Calculator" class="descArr hidden">
+              <div class="projectName hidden">Web Calculator</div>
+              <div id="fetn_desc" class="projectDesc hidden">Web based Calculator with embedded features of Binary Calculator. Perform Binary Operations, Convert Text to Binary and much more.</div>
+              <div class="techStack hidden">
+                <img src="./img/Icons/js.png" alt="js" class="stacktechs">
+                <img src="./img/Icons/css.png" alt="mongodb" class="stacktechs">
+                <img src="./img/Icons/bootstrap.png" alt="bootstrap" class="stacktechs">
+                <img src="/img/Icons/html5.png" alt="express" class="stacktechs">
+              </div>
+              <!-- <div class="projectActions">
+                <a href="#" class="siteUrl hidden"><span class="btnText">Visit site <i class="fa fa-external-link"></i></span><span class="btnBg"></span></a>
+                <a href="#" class="githubUrl hidden"><span class="btnText">View repo <i class="fa-solid fa-code"></i></span><span class="btnBg"></span></a>
+              </div> -->
+              <img src="./img/frames/wb_ss1.png" alt="screenshot" class="ss1 hidden">
+              <img src="./img/frames/wb_ss2.png" alt="screenshot" class="ss2 hidden">
+          </div>
+      </div>
       <div id="contact" class="pages"></div>
-      <div id="projects" class="pages"></div>
     </div>
     <!-- scripts -->
     <script src="./js/particles.js"></script>
