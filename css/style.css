@@ -20,8 +20,8 @@ html::-webkit-scrollbar {
 
 @media (max-width: 700px) {
   .quickBar {
-    width: 33vw !important;
-    height: 2.3rem !important;
+    width: 36vw !important;
+    height: 2.4rem !important;
     overflow-y: hidden;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -32,7 +32,7 @@ html::-webkit-scrollbar {
   }
 
   .quickOptions {
-    font-size: 20px !important;
+    font-size: 18px !important;
     position: absolute !important;
     transform: translateY(-50%);
     top: 50%;
@@ -58,7 +58,7 @@ html::-webkit-scrollbar {
     right: -300%;
   }
   .quickOptions i {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   #image {
     /* display: none !important; */
@@ -80,6 +80,9 @@ html::-webkit-scrollbar {
     height: 2rem !important;
   }
   .quickOptions::after {
+    display: none !important;
+  }
+  #mouseCursor {
     display: none !important;
   }
 }
