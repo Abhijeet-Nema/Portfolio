@@ -139,7 +139,7 @@ const hideProject = (projectName) => {
   let projectFrame = document.getElementById(projectName);
   let mobileFrame = document.getElementById(projectName + "_mobile");
   let laptopFrame = document.getElementById(projectName + "_laptop");
-  console.log(mobileFrame, laptopFrame);
+  // console.log(mobileFrame, laptopFrame);
   mobileFrame.classList.add("not_visible_frame");
   mobileFrame.classList.remove("visible_frame");
   laptopFrame.classList.add("not_visible_frame");
@@ -176,3 +176,4 @@ slideUp.addEventListener("click", () => {
     showProject(projectsArr[projectsArrPointer], prev);
   }, 500);
 });
+

@@ -18,6 +18,71 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+@media (max-width: 700px) {
+  .quickBar {
+    width: 33vw !important;
+    height: 2.3rem !important;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .quickBar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .quickOptions {
+    font-size: 20px !important;
+    position: absolute !important;
+    transform: translateY(-50%);
+    top: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+
+  .introLink {
+    left: 0;
+  }
+  .skillsLink {
+    right: -100%;
+  }
+  .projectsLink {
+    right: -200%;
+  }
+  .resumeLink {
+    right: -300%;
+  }
+  .quickOptions i {
+    font-size: 16px !important;
+  }
+  #image {
+    /* display: none !important; */
+    bottom: 0;
+    right: -19% !important;
+    height: 25rem !important;
+  }
+
+  .about {
+    /* display: none !important; */
+    top: 16% !important;
+    left: 5% !important;
+    font-size: 2rem !important;
+  }
+
+  .profiles {
+    font-size: 1.8rem !important;
+    width: 100vw !important;
+    height: 2rem !important;
+  }
+  .quickOptions::after {
+    display: none !important;
+  }
+}
 .main {
   width: 100%;
   height: 100%;
@@ -709,4 +774,8 @@ html::-webkit-scrollbar {
 .wb {
   background: linear-gradient(rgb(6, 39, 92), rgb(54 153 233));
   transition: all 0.5s linear !important;
+}
+
+#contact {
+  background: #000;
 }
