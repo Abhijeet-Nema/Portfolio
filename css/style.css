@@ -93,7 +93,7 @@ html::-webkit-scrollbar {
     font-size: 1rem !important;
   }
   .cardLeft {
-    left: -65% !important;
+    left: -62% !important;
     transform: rotate(90deg);
   }
   .icon img {
@@ -101,13 +101,14 @@ html::-webkit-scrollbar {
   }
   .card {
     width: 62vw !important;
-    height: 42vh !important;
+    height: 35vh !important;
+    min-height: 44vh !important;
   }
   .skillsHead {
     font-size: 1.8rem !important;
   }
   .title {
-    font-size: 0.6rem !important;
+    font-size: 0.7rem !important;
   }
 
   #frontend {
