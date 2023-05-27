@@ -139,15 +139,16 @@ html::-webkit-scrollbar {
   .slideBtn {
     font-size: 1.3rem !important;
     height: 2.5rem !important;
-    bottom: 1.5% !important;
+    bottom: 2% !important;
     top: unset !important;
     transform: rotate(270deg);
+    box-shadow: 0px 2px 6px -1px black !important;
   }
   .projHead {
     font-size: 1.7rem !important;
   }
   .techStack {
-    bottom: 1.5% !important;
+    bottom: 2% !important;
     right: 1.5% !important;
     border-radius: 5px !important;
     gap: 10px !important;
@@ -155,22 +156,24 @@ html::-webkit-scrollbar {
   .project_laptop {
     width: 19rem !important;
     left: 2% !important;
-    top: 9% !important;
+    top: 13% !important;
   }
   .project_mobile {
     width: 5.5rem !important;
-    top: 13.5% !important;
+    top: 16% !important;
     right: 6% !important;
   }
   .ss2 {
-    top: 35% !important;
+    top: 55% !important;
     right: 51% !important;
     width: 48% !important;
+    border-radius: 0px !important;
   }
   .ss1 {
-    top: 35% !important;
+    top: 55% !important;
     right: 1% !important;
     width: 48% !important;
+    border-radius: 0px !important;
   }
   .stacktechs {
     height: 1.7rem !important;
@@ -182,30 +185,30 @@ html::-webkit-scrollbar {
     display: none;
   }
   .projectDesc {
-    bottom: 28% !important;
+    bottom: 48% !important;
     right: 3% !important;
     width: 95% !important;
     line-height: 24px !important;
     font-size: 1.25rem !important;
   }
   .projectName {
-      top: 52% !important;
-      left: 0% !important;
-      font-size: 1.55rem !important;
-      text-align: center;
-      width: 100%;
+    top: 7% !important;
+    left: 0% !important;
+    font-size: 1.55rem !important;
+    text-align: center;
+    width: 100%;
   }
   .projectActions {
-    width: 67% !important;
+    width: 60% !important;
     flex-direction: column;
-    gap: 12px;
-    bottom: 10% !important;
+    gap: 14px;
+    bottom: 12% !important;
   }
   .projectActions a {
     border-radius: 8px !important;
     width: 100%;
     box-shadow: 0px 2px 5px 0px black;
-}
+  }
 }
 .main {
   width: 100%;
